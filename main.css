@@ -1,0 +1,353 @@
+html{
+	min-height: 400px;
+	min-width: 700px;
+}
+
+
+/*body elements--*/
+	body{
+		background-color: cornsilk;
+		display: grid;
+		grid-template-areas: 
+			"fejléc"
+			"infók"
+			"lábléc";
+		min-height: 100vh;
+		grid-template-rows: max-content 1fr max-content;
+	}
+
+	header{
+		background-color: black;
+		grid-area: fejléc;
+		border-top-left-radius:30px;
+		border-top-right-radius: 30px;
+		height: 70px;
+		text-align: left;
+	}
+
+	main.elso{
+
+		border: 4px solid black;
+		grid-area: infók;
+		display: grid;
+		grid-template-areas: 
+			"elso"
+			"masodik";
+		grid-template-areas: auto;
+
+	}
+	main.masodik{
+		border: 4px solid black;
+		grid-area: infók;
+		display:grid;
+		grid-template-areas: 
+			"egy"
+			"kettő";
+		grid-template-columns: auto;
+
+
+		
+	}
+	main.harmadik{
+		border: 4px solid black;
+		grid-area: infók;
+		display: grid;
+		grid-template-areas: 
+			"1"
+			"2";
+		grid-template-columns: auto;
+	}
+	main.negyedik{
+
+		border: 4px solid black;
+		grid-area: infók;
+		display: grid;
+		grid-template-areas: 
+			"1"
+			"2"
+			"3";
+		grid-template-columns: auto auto;
+		
+	}
+
+	footer{
+		grid-area: lábléc;
+		border-bottom-left-radius:30px;
+		border-bottom-right-radius: 30px;
+		background-color: black;
+		height: 70px;
+	}
+/*--body elements_end--*/
+
+
+/*--divek--*/
+	div.header{
+		border-color: black;
+		margin: 6px;
+		padding: 12px;
+		border-radius: 10px;
+		padding-top: 12px;
+	}
+	div.cim1{
+		grid-area: elso;
+		height: 10%;
+	}
+	div.bemutatkozas{
+		text-indent: 50px;
+		padding:10px;
+		grid-area: masodik;
+		height: 90%;
+
+	}
+	div.elérhetőség{
+		display:inline;
+		color:white;
+		padding:20px;
+		margin-top: 20px;
+	}
+	div.footer{
+		padding-top: 20px;
+		padding-left: 20px;
+		border-style: none;
+		border-radius: 2px;
+		border-color: black;
+	}
+	div.cim2{
+		grid-area: egy;
+		text-align: center;
+		height: 10%;
+	}
+	div.tanulmany{
+		grid-area: kettő;
+		height: 90%;
+		grid-template-areas: 
+			"ketto.egy"
+			"ketto.ketto";
+		grid-template-columns: 50% 50%;
+	}	
+	div.tanulások{
+		padding-left:20px;
+	}
+	div.eredmenyek{
+		padding-left: 20px;
+	}
+	div.tanulmany1{
+		grid-area: ketto.egy;
+	}
+	div.tanulmany2{
+		grid-area: ketto.ketto;
+	}
+	div.adatok{
+		width: 300px;
+		height: 100px;
+		padding:50px;
+		float: right;
+		grid-area: 3;
+		padding-bottom: 20px;
+	}
+	div.terv{
+		grid-area: 1;
+	}
+	div.webhelyek{
+		grid-area:2;
+	}
+	div.cim3{
+		text-align: center;
+		grid-area: 1;
+		height: 10%;
+	}
+	div.infok3{
+		grid-area: 2;
+		display: grid;
+		grid-template-areas: 
+			"2.1"
+			"2.2";
+		grid-template-columns: 50% 50%;
+		height: 90%;
+	}
+	div.bal{
+		grid-area: 2.1;
+	}
+	div.jobb{
+		grid-area: 2.2;
+	}
+/*--divek_end--*/
+
+
+/*--kepek--*/
+	img.profilkep{
+		border-color: black;
+		max-width:50%;
+		float:left;
+		margin:20px;
+		border-style: solid;
+	}
+	img.grafikaiterv{
+		border-style: solid;
+		border-color: black;
+		float:left;
+		margin-top: 20px;
+		margin-left: 30px;
+	}
+	img.sport{
+		float: left;
+		margin: 0 15px;
+		border-style: solid;
+		border-color: black;
+	}
+	img.zene{
+		border-style: solid;
+		border-color: black;
+		margin-left: 20px;
+	}
+	img.piar{
+		margin-left:20px; 
+		margin-top: 20px;
+		border-style: solid;
+		border-color: black;
+		border-width: 2px;
+	}
+	img.logo{
+		border-width: 3px;
+		border-style: solid;
+		border-color: black;
+		border-radius:50%;
+	}
+/*--kepek_end--*/
+
+
+/*--paragrafusok--*/
+	p.szoveg{
+		margin: 20px;
+	}
+	p.cim1{
+		border-color: black;
+		border-style: solid;
+	}
+	p.cim3{
+		text-align: center;
+	}
+	p.sportok{
+		padding: 0px 30px;
+		
+	}
+	p.zene{
+		padding: 30px;
+	}
+	p.tanulmany{
+		margin: 20px;
+	}
+/*--paragragusok_end--*/
+
+
+/*--linkek--*/
+	a.menu{
+		color:black;
+		margin:10px;
+		text-decoration: none;
+		text-align: right;
+	}
+	a.szovegben{
+		color:black;
+		text-decoration: none;
+	}
+	a.elérhetőség{
+		color:white;
+		text-decoration: none;
+		padding-left: 20px;
+	}
+	a.webhelyek{
+		color:black;
+		text-decoration: underline;
+	}
+	button{
+		color: white;
+		font-size: 14px;
+		text-decoration: none;
+ 		background-color: white;
+  		border-color: white;
+  		border-style: solid;
+  		border-width: 2px;
+  		border-radius: 10px;
+  		display: inline-block;
+  		padding: 7px 16px;
+  		text-align: center;
+  		margin:0 10px;
+  		margin-bottom: 40px;
+  		}
+  	button:hover{
+  		background-color: gray;
+  		transition-duration: 0.5s;
+  	}
+/*--linkek_end--*/
+
+
+/*--hoverek--*/
+	header .menu:hover{
+		color: solid gray;
+		text-decoration: underline;
+	}
+	a.szovegben:hover{
+		text-decoration: underline;
+		color:solid gray;
+	}
+	a.elérhetőség:hover{
+		text-decoration: underline;
+	}
+	a.webhelyek:hover{
+		text-decoration-line: underline;
+		color:blue;
+	}
+/*--hoverek_end--*/
+
+
+/*--szovegelemek--*/
+	big{
+		margin: 3px;
+	}
+
+	dl.adatok{
+		margin:10px;
+		margin-left: 40px;
+	}
+	ul.nehezsegek{
+		margin:50px;
+		float: left;
+		border-style: solid;
+		border-color: black;
+		border-radius: 10px;
+		padding:20px;
+		padding-left: 60px;
+		padding-right: 40px;
+	}
+	ul.webhelyek{
+		float: left;
+		margin:50px;
+		border-style: solid;
+		border-color: black;
+		border-radius: 10px;
+		padding:20px;
+		padding-left: 40px;
+	}
+	h1{
+		border-color: black;
+		border-radius: 10px;
+		margin:10px;
+		border-style: solid;
+		padding:10px 0;
+		text-align: center;
+	}
+	h3{
+		padding-left: 15px;
+	}
+	h2{
+		border-style: solid;
+		border-color: black;
+		border-radius: 20px;
+		padding:20px 0 20px 0;
+		margin:10px 20px 0 20px;
+	}
+	dl{
+		padding-right: 20px;
+	}	
+/*--szovegelemek_end--*/
